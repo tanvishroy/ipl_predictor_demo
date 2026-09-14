@@ -1,6 +1,6 @@
 import { PredictionRequest, PredictionSuccessResponse, PredictionErrorResponse } from '../types/ipl';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:5001';
+const API_BASE_URL = 'http://98.130.46.197:5000';
 const PREDICT_ENDPOINT = `${API_BASE_URL}/predict`;
 export interface ApiResultSuccess {
   success: true;
