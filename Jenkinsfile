@@ -11,13 +11,13 @@ pipeline {
 
         stage('Build Backend') {
             steps {
-                sh 'docker build -t ipl-backend ./backend'
+                sh 'docker build --platform linux/amd64 -t ipl-backend ./backend'
             }
         }
 
         stage('Build Frontend') {
             steps {
-                sh 'docker build -t ipl-frontend ./frontend'
+                sh 'docker build --platform linux/amd64 -t ipl-frontend ./frontend'
             }
         }
 
